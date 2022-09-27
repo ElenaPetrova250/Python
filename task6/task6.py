@@ -10,16 +10,16 @@ def inputKoord(x):
     for i in range(x):
         is_OK = False
         while not is_OK:
-            True:
-                number = float(input(f"Введите {i+1} координату: "))
-                a[i] = number
-                is_OK = True
-                if a[i] == 0:
-                    is_OK = False
-                    print("Координата не должно быть равна 0 ")
-            except ValueError:
-                print("Ты ошибся. Вводить надо числа!")
-    return a
+            True
+number = float(input(f"Введите {i+1} координату: "))
+a[i] = number
+is_OK = True
+if a[i] == 0:
+    is_OK = False
+print("Координата не должно быть равна 0 ")
+except ValueError:
+ print("Ты ошибся. Вводить надо числа!")
+return a
 
 def checkCoordinates(xy):
     text = 4
