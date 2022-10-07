@@ -9,3 +9,7 @@ for i in range(N):
     list.append(i)
 
 print(list)
+
+print(max(list) - min(list))
+
+
