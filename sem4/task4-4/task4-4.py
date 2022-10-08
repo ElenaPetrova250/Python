@@ -10,7 +10,6 @@
 from random import randint as rI
 
 degree = int(input("Введите максимальную степень многочлена: "))
-
 pathWrite = r"sem4/task4-4/file.txt"
 equation = " "
 
@@ -21,16 +20,17 @@ for d in range(degree, -1, -1):
         if coef > 0:
             equation += str(coef) + 'x^' + str(d)
         if coef < 0:
-            equation += ' - ' + str(abs(coef)) + 'x^' + str(d)
+             equation += ' - ' + str(abs(coef)) + 'x^' + str(d)
     else:
         if coef > 0:
-            equation += ' + ' + str(coef) + 'x^' + str(d)
+                equation += ' + ' + str(coef) + 'x^' + str(d)
         if coef < 0:
-            equation += ' - ' + str(abs(coef)) + 'x^' + str(d)
+                equation += ' - ' + str(abs(coef)) + 'x^' + str(d)
+print(equation)
 
 try:
     with open (pathWrite, 'w') as data:
-        data.write(equation)
+        c
 except:
     print ('Файл не найден')
 
