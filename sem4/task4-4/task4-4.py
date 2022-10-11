@@ -30,7 +30,7 @@ print(equation)
 
 try:
     with open (pathWrite, 'w') as data:
-        c
+        file = data.read().split(" ")
 except:
     print ('Файл не найден')
 

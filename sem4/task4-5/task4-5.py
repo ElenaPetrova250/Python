@@ -72,3 +72,4 @@ print(final)
 
 with open (r"sem4/task4-5/fileresult.txt", 'w') as data:
     file = data.read().split(" ")
+
